@@ -1,0 +1,15 @@
+Answer the following questions with ruby code. You may use irb, but no other reference materials.
+1. What is a class method?
+ANSWER:
+2. What is an instance method?
+ANSWER:
+3. How do you write a class method?
+ANSWER:
+4. How do you write an instance method?
+ANSWER:
+5. Write a class that has an instance method and a class method. Prove it by calling them in a script.
+ANSWER:
+6. Draw a diagram that represents classes, objects, instance methods, and class methods. Label the diagram.
+ANSWER: (Attach a screenshot.)
+7. Write a script that includes a case statement in a method. Call the method at least twice, and have the method return something different each time it is called. Prove it by running the script.
+ANSWER:

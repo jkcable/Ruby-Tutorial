@@ -1,0 +1,19 @@
+Answer the following questions with ruby code. You may use irb, but no other reference materials.
+
+1. When do you use the initialize method?
+ANSWER:
+
+2. How is the initialize method called?
+ANSWER:
+
+3. Provide an example of using the initialize method. Prove it running it.
+ANSWER:
+
+4. Why are arguments passed into the initialize method?
+ANSWER:
+
+5. How are arguments used when they are passed into an initialize method?
+ANSWER:
+
+6. Provide an example of an initialize method that processes arguments. Prove it by running it.
+ANSWER:

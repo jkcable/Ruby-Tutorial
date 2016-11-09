@@ -1,0 +1,30 @@
+Answer the following questions with ruby code. You may use irb, but no other reference materials.
+
+1. Write a while loop. It must loop at least 2 times, but no more than 10 times.
+ANSWER:
+
+a = 0
+while a < 10
+    puts a
+end
+
+Assume the following ruby code has been run when answering the rest of the questions:
+  a_list = ["cat", "dog", "horse"]
+
+2. How do you find the size of the list?
+ANSWER: a_list.count
+
+3. What is the expression to represent "is the list empty?"
+ANSWER: a_list.empty?
+
+4. What is the expression to represent "is the list not empty?"
+ANSWER: !a_list.empty?
+
+5. What is the expression to represent "is the list not empty and is it's size greater than 3?"
+ANSWER: (a_list.empty?) && (a_list.count > 3)
+
+6. What are ways to modify the list?
+ANSWER:
+a_list.pop
+a_list.push("monkey")
+a_list.drop(1)
