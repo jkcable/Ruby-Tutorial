@@ -1,19 +1,47 @@
 Answer the following questions with ruby code. You may use irb, but no other reference materials.
 
 1. When do you use the initialize method?
-ANSWER:
+ANSWER: You use the initialize method for the purpose of taking in arguments to use in instance methods of a class.
 
 2. How is the initialize method called?
-ANSWER:
+ANSWER: Calling the .new method on the class.
 
 3. Provide an example of using the initialize method. Prove it running it.
 ANSWER:
 
+class Animal
+
+  def initialize
+    puts "in the initialize method"
+  end
+
+end
+
+dog = Animal.new
+
 4. Why are arguments passed into the initialize method?
-ANSWER:
+ANSWER: Arguments are passed into the initialize method so they can be used in the methods of the class.
 
 5. How are arguments used when they are passed into an initialize method?
-ANSWER:
+ANSWER: The instance variables are available to all the instance methods.
 
 6. Provide an example of an initialize method that processes arguments. Prove it by running it.
 ANSWER:
+
+class Animal
+
+  def initialize(type, size)
+    @type = type
+    @size = size
+  end
+
+  def show_animal
+    puts "I am a #{@type} that is #{@size}."
+  end
+
+end
+
+animal = Animal.new("elephant", "large")
+
+animal.show_animal
+

@@ -1,1 +1,84 @@
-First note.
+Classes:
+
+To set up a class:
+
+You must initialize a variable to use as an instance variable throughout the class.
+Stamping out an instance of a class.
+
+Class method needs .self
+
+def self.set
+    5
+end
+
+Instance methods need a new instance created in order to use.
+three = Number.new
+
+
+Looking at a class, how to run a method on that class
+Squares.new(5).square_of_sum
+
+Class methods are methods that are called on a class.
+Instance methods are methods that are called on an instance of a class.
+
+class Foo
+  def self.bar
+    puts 'class method'
+  end
+
+  def baz
+    puts 'instance method'
+  end
+end
+
+Foo.bar # => "class method"
+Foo.baz # => NoMethodError: undefined method ‘baz’ for Foo:Class
+
+Foo.new.baz # => instance method
+Foo.new.bar # => NoMethodError: undefined method ‘bar’ for #<Foo:0x1e820>
+
+When you see self.method_name, it is a class method.
+
+Class methods are for anything that does not deal with an individual instance of a class.
+
+# Way 1
+class Foo
+  def baz
+    puts 'instance method'
+  end
+end
+
+Foo.new.baz # "instance method"
+
+# Way 2
+class Foo
+  attr_accessor :baz
+end
+
+foo = Foo.new
+foo.baz = 'instance method'
+puts foo.baz
+
+# Way 3
+class Foo; end
+
+foo = Foo.new
+def foo.bar
+  puts 'instance method'
+end
+
+Foo.new.baz # "instance method"
+
+The key difference is instance methods only work with an instance and
+thus you have to create a new instance to use them (Foo.new).
+
+A Class Method is a piece of functionality that belongs to that class,
+but is not tied to any particular single instance.
+
+Instance Methods on the other hand, can only be called on a particular instance of the class.
+
+You use Instance Methods when you need to act on a particular instance of the class.
+
+This is often when the functionality concerns the identity of the instance
+such as calling properties on the object, or invoking behaviour.
+

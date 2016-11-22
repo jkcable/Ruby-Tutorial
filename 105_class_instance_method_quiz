@@ -1,15 +1,51 @@
 Answer the following questions with ruby code. You may use irb, but no other reference materials.
+
 1. What is a class method?
-ANSWER:
+ANSWER: Class methods are methods that are called on a class at the class level.
+Class methods use the self.method_name.
+
 2. What is an instance method?
-ANSWER:
+ANSWER: Instance methods are methods that are called on an instance of a class at the object level.
+You have to create a new instance in order to use them.
+Instance methods don't have the self.method_name.
+
+
 3. How do you write a class method?
 ANSWER:
+class Animal
+    def self.make_noise
+    end
+
+
 4. How do you write an instance method?
-ANSWER:
+ANSWER:1
+class Animal
+    def make_noise
+    end
+
 5. Write a class that has an instance method and a class method. Prove it by calling them in a script.
 ANSWER:
+class Dog
+
+  def self.make_dog
+    puts "Dog"
+  end
+
+  def make_noise
+    puts "Bark"
+  end
+
+end
+
+Dog.make_dog
+
+dog = Dog.new
+dog.make_noise
+
 6. Draw a diagram that represents classes, objects, instance methods, and class methods. Label the diagram.
 ANSWER: (Attach a screenshot.)
-7. Write a script that includes a case statement in a method. Call the method at least twice, and have the method return something different each time it is called. Prove it by running the script.
+
+7. Write a script that includes a case statement in a method.
+Call the method at least twice, and have the method return something different each time it is called.
+Prove it by running the script.
 ANSWER:
